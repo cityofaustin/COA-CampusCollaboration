@@ -14,10 +14,10 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: `keyssV4KNWdZD5AGR`,
+        apiKey: `keyEi3jMpToeZKaZ1`,
         tables: [
           {
-            baseId: `appuWc6duIrqvsZQt`,
+                baseId: `appmgNPTyoltvqsvT`,
             tableName: `projects`,
             tableView: `Grid view`,
           }
