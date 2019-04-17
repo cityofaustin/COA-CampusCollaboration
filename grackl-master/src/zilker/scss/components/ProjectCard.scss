@@ -1,0 +1,86 @@
+.coa-ProjectCard {
+  width: 300px;
+  height: 385px;
+  border: 3px solid #0071bc;
+  font-family: "Roboto"; margin: 2.2rem;
+  position: relative;
+  text-decoration: none;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.coa-ProjectCard__image {
+  height: 130px;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: center;
+  background-color: #fcfcfc;
+}
+
+.coa-ProjectCard__svg {
+  margin-right: .2rem;
+}
+
+.coa-ProjectCard__body {
+  padding: .75rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.coa-ProjectCard__stage-text {
+  padding-top: .1rem;
+}
+
+.coa-ProjectCard__stage {
+  font-size: 14px;
+  font-weight: 350; color: #efefef; text-transform: uppercase;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #4a4a4a;
+  flex: 1 1 0%;
+}
+
+.coa-ProjectCard__title-text {
+text-align: center; font-family: "Roboto"; font-size: 18px;
+  font-weight: 550;
+ color: #0071bc;
+  margin: 1.5rem 0 1rem;
+  line-height: 1.5rem;
+}
+
+.coa-ProjectCard__plain-text {
+ color: #efefef; font-weight: 350; font-size: 14px;
+  line-height: 1.3;
+  color: #212121;
+  margin: 0;
+}
+
+.coa-ProjectCard__field {
+  font-size: 14px;
+  flex: 1 1 0%;
+  margin: 0;
+}
+
+.coa-ProjectCard__label {
+font-family: "Roboto"; margin: .5rem 0 0;
+  font-weight: 550;
+  color: #384a89;
+}
+
+.icon-clock {
+  position: relative;
+  top: 3px;
+}
+
+.coa-project__comma:not(:first-child) {
+  margin-left: -.2em;  
+}
+
+.coa-project__comma:empty {
+  display: none;
+}
+
+.coa-project__comma:not(:first-child):before {
+  content: ", ";
+}
