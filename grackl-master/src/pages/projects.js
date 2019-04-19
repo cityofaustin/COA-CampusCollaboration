@@ -43,6 +43,12 @@ export const query = graphql`
         node {
           id
           data {
+            Project_end_date
+            Success_criteria
+            Value_proposition
+            Participating_university_departments
+            Collaboration_type
+            Participating_university
             Project_Name
             Description
             Publish

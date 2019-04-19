@@ -8,7 +8,13 @@ import ClockSvg from "../zilker/ClockSvg.js";
 import Layout from "../components/layout";
 
 export default ({ data }) => {
-  const {
+    const {
+    Project_end_date,
+    Success_criteria,
+    Value_proposition,
+    Collaboration_type,
+    Participating_university,
+    Participating_university_departments,
     Project_Name,
     Description,
     Link,
@@ -63,49 +69,7 @@ export default ({ data }) => {
               </div>
             </div>
 
-            <div>
-              <hr />
-              <div className="usa-width-one-fourth">
-                <h2 className="coa-city__sub-category">Who's Involved</h2>
-              </div>
-              <div className="usa-width-three-fourths">
-                <p className="coa-project__body">
-                  Project champions: &nbsp;
-                  {Lead_Department &&
-                  Lead_Department.length === 1 &&
-                  departments[Lead_Department[0]] ? (
-                    <a
-                      href={
-                        departments[Lead_Department[0]]["fields"]["Home page"]
-                      }
-                      target="_blank"
-                    >
-                      {departments[Lead_Department[0]] &&
-                        departments[Lead_Department[0]]["fields"][
-                          "Dept long name"
-                        ]}
-                    </a>
-                  ) : (
-                    Lead_Department &&
-                    Lead_Department.map((d, i) => {
-                      return (
-                        <a
-                          href={
-                            departments[d] &&
-                            departments[d]["fields"]["Home page"]
-                          }
-                          target="_blank"
-                        >
-                          {departments[d] &&
-                            departments[d]["fields"]["Dept long name"]}
-                          {i == 0 ? <span>, </span> : ""}
-                        </a>
-                      );
-                    })
-                  )}
-                </p>
-              </div>
-            </div>
+            
 
             <div>
               <hr />
@@ -123,7 +87,78 @@ export default ({ data }) => {
                 </p>
               </div>
             </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-one-fourth">
+                    <h2 className="coa-city__sub-category">Value Proposition</h2>
+                </div>
+                <div className="usa-width-three-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Value_proposition}</span>
+                    </p>
 
+                </div>
+            </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-one-fourth">
+                    <h2 className="coa-city__sub-category">Success Criteria</h2>
+                </div>
+                <div className="usa-width-three-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Success_criteria}</span>
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-one-fourth">
+                    <h2 className="coa-city__sub-category">Participating University</h2>
+                </div>
+                <div className="usa-width-three-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Participating_university}</span>
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-one-fourth">
+                    <h2 className="coa-city__sub-category">Participating University Department</h2>
+                </div>
+                <div className="usa-width-three-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Participating_university_departments}</span>
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-one-fourth">
+                    <h2 className="coa-city__sub-category">Collaboration Type</h2>
+                </div>
+                <div className="usa-width-three-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Collaboration_type}</span>
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-one-fourth">
+                    <h2 className="coa-city__sub-category">Estimated Project End Date</h2>
+                </div>
+                <div className="usa-width-three-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Project_end_date}</span>
+                    </p>
+
+                </div>
+            </div>
             <div>
               <hr />
               <div className="usa-width-one-fourth">
@@ -149,6 +184,12 @@ export const pageQuery = graphql`
   query($name: String) {
     airtable(table: { eq: "projects" }, data: { Project_Name: { eq: $name } }) {
       data {
+        Project_end_date
+        Success_criteria
+        Value_proposition
+        Collaboration_type
+        Participating_university_departments
+        Participating_university
         Project_Name
         Description
         Link
