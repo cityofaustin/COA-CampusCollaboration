@@ -16,7 +16,7 @@ class CardSection extends Component {
     return (
         <section className="coa-CardSection usa-section usa-grid coa-flex-container coa-flex-wrap">
             <div className="col-xs-12">
-                <h2 className="coa-intro_head align-self-center">City of Austin and University Partners Projects</h2>
+                <h2 className="coa-intro_head align-self-center">City of Austin & Higher Education Collaborations</h2>
             </div>
         <div className="row top-xs">
           {
