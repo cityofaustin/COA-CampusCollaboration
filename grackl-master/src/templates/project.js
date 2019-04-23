@@ -33,7 +33,7 @@ export default ({ data }) => {
     <Layout>
       <section className="usa-section usa-grid">
         <div className="row">
-          <div className="col-xs-12 col-sm-8">
+          <div className="col-xs-12 col-sm-10">
             <div>
               <h1 className="coa-project__name">{Project_Name}</h1>
             </div>
@@ -53,11 +53,11 @@ export default ({ data }) => {
               </h3>
               <hr />
 
-              <div className="usa-width-one-fourth">
+              <div className="usa-width-two-fourths">
                 <h2 className="coa-city__sub-category">Funding</h2>
               </div>
 
-              <div className="usa-width-three-fourths">
+              <div className="usa-width-two-fourths">
                 <p className="coa-project__body">
                   Total budget of &nbsp;
                   {/* TODO: format as currency */}
@@ -73,10 +73,10 @@ export default ({ data }) => {
 
             <div>
               <hr />
-              <div className="usa-width-one-fourth">
+              <div className="usa-width-two-fourths">
                 <h2 className="coa-city__sub-category">Project Goals</h2>
               </div>
-              <div className="usa-width-three-fourths">
+              <div className="usa-width-two-fourths">
                 <p className="coa-project__body">
                   <span className="coa-comma">
                     {Primary_strategic_outcome}{" "}
@@ -89,10 +89,10 @@ export default ({ data }) => {
             </div>
             <div>
                 <hr></hr>
-                <div className="usa-width-one-fourth">
+                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Value Proposition</h2>
                 </div>
-                <div className="usa-width-three-fourths">
+                <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
                         <span className="coa-comma">{Value_proposition}</span>
                     </p>
@@ -101,10 +101,10 @@ export default ({ data }) => {
             </div>
             <div>
                 <hr></hr>
-                <div className="usa-width-one-fourth">
+                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Success Criteria</h2>
                 </div>
-                <div className="usa-width-three-fourths">
+                <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
                         <span className="coa-comma">{Success_criteria}</span>
                     </p>
@@ -113,10 +113,10 @@ export default ({ data }) => {
             </div>
             <div>
                 <hr></hr>
-                <div className="usa-width-one-fourth">
+                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Participating University</h2>
                 </div>
-                <div className="usa-width-three-fourths">
+                <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
                         <span className="coa-comma">{Participating_university}</span>
                     </p>
@@ -125,10 +125,10 @@ export default ({ data }) => {
             </div>
             <div>
                 <hr></hr>
-                <div className="usa-width-one-fourth">
+                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Participating University Department</h2>
                 </div>
-                <div className="usa-width-three-fourths">
+                <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
                         <span className="coa-comma">{Participating_university_departments}</span>
                     </p>
@@ -137,10 +137,10 @@ export default ({ data }) => {
             </div>
             <div>
                 <hr></hr>
-                <div className="usa-width-one-fourth">
+                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Collaboration Type</h2>
                 </div>
-                <div className="usa-width-three-fourths">
+                <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
                         <span className="coa-comma">{Collaboration_type}</span>
                     </p>
@@ -149,10 +149,10 @@ export default ({ data }) => {
             </div>
             <div>
                 <hr></hr>
-                <div className="usa-width-one-fourth">
+                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Estimated Project End Date</h2>
                 </div>
-                <div className="usa-width-three-fourths">
+                <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
                         <span className="coa-comma">{Project_end_date}</span>
                     </p>
@@ -161,11 +161,11 @@ export default ({ data }) => {
             </div>
             <div>
               <hr />
-              <div className="usa-width-one-fourth">
+              <div className="usa-width-two-fourths">
                 <h2 className="coa-city__sub-category">Get in Touch</h2>
               </div>
-              <div className="usa-width-three-fourths">
-                <p className="coa-project_body">
+              <div className="usa-width-two-fourths">
+                <p className="coa-project__body">
                   {Contact_Name}, {Contact_Title}
                   <br />
                   <a href={`mailto:${Contact_email}`}>{Contact_email}</a>
@@ -173,7 +173,7 @@ export default ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-4" />
+          <div className="col-xs-12 col-sm-2" />
         </div>
       </section>
     </Layout>
