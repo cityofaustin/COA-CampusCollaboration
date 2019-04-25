@@ -30,7 +30,7 @@ export const query = graphql`
             Project_Name
             Description
             Publish
-            City_strategic_outcomes
+            City_strategic_outcomes_string
           }
           fields {
             slug
