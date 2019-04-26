@@ -5,7 +5,7 @@ const navItems = [
     title: 'Home',
     path: '/',
   }, {
-    title: 'About Project Tracker',
+    title: 'About Campus Collaborations',
     path: '/about',
   },{
       title: 'All Projects',

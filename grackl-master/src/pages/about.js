@@ -19,53 +19,44 @@ const AboutPage = ({ data }) => (
         <section className="usa-section usa-grid">
             <div className="row">
                 <div className="col-xs-12 col-sm-7">
-                    <h2 className="coa-about__head">About {data.site.siteMetadata.title}
+                    <h2 className="coa-about__head">About City of Austin Campus Collaborations
                     </h2>
                     <p className="coa-about__body">
-                        ATX Project Tracker aims to make it easier for people in Austin to have a better understanding of:
+                        The City of Austin wants to be a natural part of the research and education community. City of Austin Campus Collaborations aims to showcase current and past collaborations between the City of Austin and higher education institutions. The goal is to make it easier for people to gain a better understanding of collaboration efforts, the status and progress of those efforts, how they relate to critical goals for the participating institutions, measures of success and how others can get involved.
 
-        <ul className="coa-about__body">• What projects the City is working on,</ul>
-                        <ul className="coa-about__body">• The state of progress of those projects,</ul>
-                        <ul className="coa-about__body">• How the projects relate to critical goals,</ul>
-                        <ul className="coa-about__body">• And how they are funded.</ul>
-
-                        The City of Austin consists of 40+ departments and over 13,000 employees serving almost 1 million people. There are tons of City-sponsored projects going on at any given moment in time – street resurfacing, park improvements, service delivery, and research, to name a few.
-      </p>
-                    <p className="coa-about__body">It can be challenging for people in Austin to know what projects are going on relevant to them, what their status is, and how they can learn more (or even participate). City staff often face the same challenge. Because many of Austin’s challenges cross departmental lines–such as housing affordability, which involves at least half a dozen departments–many employees need easier access to information on other City projects that relate to their work.
-      </p>
-                    <p className="coa-about__body">When the City of Austin joined the Open Government Partnership’s Subnational Pilot Program in December 2016, we made a commitment to build and test a project tracking tool as part of our participation. In short, we committed to up the City of Austin’s game in transparency, civic participation, accountability, and technology innovation. <a href="https://www.opengovpartnership.org/about/about-ogp" target="_blank" className="link--external">Learn more about the Open Government Partnership</a>
-                    </p>
-                    <p className="coa-about__title">
-                        Other City of Austin Project Tracking Tools
-   </p>
-                    <p className="coa-about__body">
-                        If you are looking for details about projects and programs funded by the 2016 Mobility Bond Program, you can view them on the <a href="http://capitalprojects.austintexas.gov/projects" target="_blank" className="link--external">City of Austin Project Explorer.</a> If you are interested in diving into the City's budget and how funds are allocated, get a guided view through <a href="http://budget.austintexas.gov/#!/year/default"> Open Budget ATX.</a>
-                    </p>
+        <p className="coa-about__collab_title">
+                            Types of collaboration between the City of Austin and higher education institutions include:
+        </p>
+                        <ul className="coa-about__body">1. Classroom projects</ul>
+                        <ul className="coa-about__body">2. Research</ul>
+                        <ul className="coa-about__body">3. Contract Work</ul>
+                        <ul className="coa-about__body">4. Collaboration on Grant Applications</ul>
+                        <ul className="coa-about__body">5. Internships</ul>
+                        <ul className="coa-about__body">6. Data Sharing</ul>
+        </p>
                     <p className="coa-about__title">
                         Follow our progress and contribute
     </p>
                     <p className="coa-about__body">
-                        Since this is open government, we are designing and building a project tracking tool using open source code that users can follow, copy and contribute to. We keep our code on <a href="https://github.com/cityofaustin/grackl">Github</a> and welcome collaboration!
+                        This is an open source project and we welcome collaboration! You can find our code on <a href="https://github.com/cityofaustin/grackl">Github</a>.
       </p>
 
                     <p className="coa-about__title">Get In Touch
     </p>
                     <p className="coa-about__body">
-                        Do you have feedback for us? Or are you a City staff member wanting to publish your project on ATX Project Tracker?
-      We would love to hear from you:<br />
-                        Contact us at the: <a href="mailto:innovation@austintexas.gov">Innovation Office</a>
+                        Do you have feedback for us? Or are you a City or higher education staff member wanting to publish your project on City of Austin Campus Collaborations? Contact: <a href="mailto:sara.smith@austintexas.gov">Sara Smith</a>. We would love to hear from you.
                     </p>
                 </div>
 
                 <div className="col-xs-12 col-sm-5 coa-About__sidebar__display">
                     <img src={img} alt="City of Austin from above" align="center" />
                     <div className="coa-About__sidebar__title">Strategic Goals</div>
-                    <div className="coa-About__sidebar__plain-text">In 2017 Austin’s City Council adopted a <a href="https://austinstrategicplan.bloomfire.com/posts/1373079-city-of-austin-strategic-direction">strategic vision</a> and six corresponding strategic outcomes to guide the City of Austin over the next three to five years. The ATX Project Tracker uses these goal areas to tell the story about what results each project aims to achieve. Definitions for each outcome are below.
+                    <div className="coa-About__sidebar__plain-text">In 2017 Austin’s City Council adopted a <a href="https://austinstrategicplan.bloomfire.com/posts/1373079-city-of-austin-strategic-direction">strategic vision</a> and six corresponding strategic outcomes to guide the City of Austin over the next three to five years. The City of Austin Campus Collaborations app uses these goal areas to tell the story about what results each project aims to achieve. Definitions for each outcome are below.
 
       <dl className="coa-about__phase">
 
                             <p><GovSvg />
-                                <dt className="coa-About__sidebar__goal__title"> Government That Works
+                                <dt className="coa-About__sidebar__goal__title">Government That Works
       </dt>
                                 <dd className="coa-About__sidebar__plain-text">Believing that city government works effectively and collaboratively for all of us - that it is fair, ethical, and innovative.
           </dd>
@@ -99,7 +90,7 @@ const AboutPage = ({ data }) => (
                             </p>
                         </dl>
 
-      <div style={{ height: "0.1rem", backgroundColor: "#9b9b9b" }}></div>
+                        <div style={{ height: "0.1rem", backgroundColor: "#9b9b9b" }}></div>
 
                         <div className="coa-About__sidebar__head">
                             Project Stages
