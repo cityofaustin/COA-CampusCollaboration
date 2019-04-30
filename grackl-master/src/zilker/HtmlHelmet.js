@@ -11,7 +11,7 @@ class HtmlHelmet extends Component {
 
     return (
       <Helmet
-        title={title}
+        title="ATX Campus Collaborations"
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' },
