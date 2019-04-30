@@ -3,6 +3,7 @@ import SiteNav from './SiteNav';
 import { Link } from "gatsby"
 
 import "./scss/components/SiteHeader.scss"
+import img from "./img/austintx-logo.png"
 
 class SiteHeader extends Component {
     state = { isNavOpen: false }
@@ -26,7 +27,7 @@ class SiteHeader extends Component {
                                 <a href="/"
                                     title="Home"
                                     aria-label="Home">
-                                    {title}
+                                    <img src={img} alt="City of Austin Logo" class="image" />
                                 </a>
                             </em>
                         </div>

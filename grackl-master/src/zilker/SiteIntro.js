@@ -16,7 +16,7 @@ class SiteIntro extends Component {
                         <img src={img} alt="Austin Community" class="image" />
                         <div class="content">
                             <h1>City of Austin Campus Collaborations</h1>
-                            <p>"Enter description provided by client here... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." <a href="/about">Learn more about this website.</a>
+                            <p>City of Austin, higher education and the community collaborate on projects, research, the classroom and internships because we are all in this together. <a href="/about">Learn more about this website.</a>
                             </p>
                             <div className="row">
                                 <div className="col-xs-12 col-sm-6 coa-SearchBar" >
