@@ -8,7 +8,7 @@ const navItems = [
     title: 'About Campus Collaborations',
     path: '/about',
   },{
-      title: 'All Projects',
+      title: 'All Collaborations',
       path: '/projects',
   },
 ];

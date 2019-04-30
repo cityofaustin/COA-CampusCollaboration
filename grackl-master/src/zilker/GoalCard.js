@@ -16,7 +16,7 @@ class GoalCard extends Component {
           <p className="coa-Card__desc-text">{description}</p>
         </div>
         <div className="coa-Card__body">
-          <span className="coa-Card__label-text2">Recently Updated Projects</span>
+          <span className="coa-Card__label-text2">Recently Updated Collaborations</span>
           <ul className="coa-Card__project-list">
             {projects.map((project, i) => {
               if (i > 3) return false
@@ -38,7 +38,7 @@ class GoalCard extends Component {
             {/* TODO: figure out routing for project with filter */}
             <Link to={`projects?goal=${fullTitle}`}>
               {/* TODO: Add carrat right icon */}
-              View {title} projects
+              View {title} collaborations
             </Link>
           </div>
         </div>

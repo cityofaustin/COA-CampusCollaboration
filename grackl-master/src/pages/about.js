@@ -51,7 +51,7 @@ const AboutPage = ({ data }) => (
                 <div className="col-xs-12 col-sm-5 coa-About__sidebar__display">
                     <img src={img} alt="City of Austin from above" align="center" />
                     <div className="coa-About__sidebar__title">Strategic Goals</div>
-                    <div className="coa-About__sidebar__plain-text">In 2017 Austin’s City Council adopted a <a href="https://austinstrategicplan.bloomfire.com/posts/1373079-city-of-austin-strategic-direction">strategic vision</a> and six corresponding strategic outcomes to guide the City of Austin over the next three to five years. The City of Austin Campus Collaborations app uses these goal areas to tell the story about what results each project aims to achieve. Definitions for each outcome are below.
+                    <div className="coa-About__sidebar__plain-text">In 2017 Austin’s City Council adopted a <a href="https://austinstrategicplan.bloomfire.com/posts/1373079-city-of-austin-strategic-direction">strategic vision</a> and six corresponding strategic outcomes to guide the City of Austin over the next three to five years. The City of Austin Campus Collaborations app uses these goal areas to tell the story about what results each collaboration aims to achieve. Definitions for each outcome are below.
 
       <dl className="coa-about__phase">
 
@@ -93,24 +93,24 @@ const AboutPage = ({ data }) => (
                         <div style={{ height: "0.1rem", backgroundColor: "#9b9b9b" }}></div>
 
                         <div className="coa-About__sidebar__head">
-                            Project Stages
+                            Collaboration Stages
     </div>
                         <div className="coa-About__sidebar__plain-text">
-                            The ATX Project Tracker uses four stages to describe a project’s progress or status. Definitions for each stage are below.
+                            The City of Austin Campus Collaborations app uses four stages to describe a collaboration’s progress or status. Definitions for each stage are below.
     </div>
 
 
 
                         <dl className="coa-about__phase">
                             <dt className="coa-About__sidebar"><ClockSvg />PLANNING</dt>
-                            <dd className="coa-About__sidebar__plain-text">In this stage, people are identifying and scoping the project. It includes leads or opportunities that have been identified, but are not yet in progress.
+                            <dd className="coa-About__sidebar__plain-text">In this stage, people are identifying and scoping the collaboration. It includes leads or opportunities that have been identified, but are not yet in progress.
           </dd>
                             <dt className="coa-About__sidebar"><ClockSvg />LEARNING</dt>
-                            <dd className="coa-About__sidebar__plain-text">This stage includes research to understand what type of solution, product, or service should be put in place. Activities in this stage include discovery, needs assessments, and requirements gathering.
+                            <dd className="coa-About__sidebar__plain-text">This stage includes research to understand what type of solution, collaboration, or service should be put in place. Activities in this stage include discovery, needs assessments, and requirements gathering.
 
           </dd>
                             <dt className="coa-About__sidebar"><ClockSvg />IN PROGRESS</dt>
-                            <dd className="coa-About__sidebar__plain-text">This stage involves executing the solution, product, or service, including design, development, testing, and solution implementation.
+                            <dd className="coa-About__sidebar__plain-text">This stage involves executing the solution, collaboration, or service, including design, development, testing, and solution implementation.
 
           </dd>
                             <dt className="coa-About__sidebar"><ClockSvg />COMPLETE/LIVE</dt>

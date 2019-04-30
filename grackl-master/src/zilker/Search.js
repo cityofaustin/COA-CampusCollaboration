@@ -20,7 +20,7 @@ class Search extends Component {
     return (
       <div role="search">
         <form className="usa-search usa-search-small" onSubmit={(e) => this.navigateToSearch(e)}>
-          <label htmlFor="search-field-small">Search for Projects</label>
+          <label htmlFor="search-field-small">Search for Collaborations</label>
           <input
             id="search-field-small"
             type="search" name="search"

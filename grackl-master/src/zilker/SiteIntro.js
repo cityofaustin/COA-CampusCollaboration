@@ -23,7 +23,7 @@ class SiteIntro extends Component {
                                     <Search />
                                 </div>
                                 <div className="col-xs-12 col-sm-6 coa-SiteIntro__link">
-                                    <Link to="/projects">View All Tracked Projects</Link>
+                                    <Link to="/projects">View All Tracked Collaborations</Link>
                                 </div>
                             </div> </div> </div> </div>
             </section>
