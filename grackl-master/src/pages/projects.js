@@ -25,7 +25,12 @@ export default ({ location, data }) => {
       : projects.filter((project) => {
         return project.node.data.Project_Name.toLowerCase().includes(searchString[1]) ||
           project.node.data.Description.toLowerCase().includes(searchString[1]) ||
-          project.node.data.City_strategic_outcomes_string.toLowerCase().includes(searchString[1])
+          project.node.data.City_strategic_outcomes_string.toLowerCase().includes(searchString[1]) ||
+          project.node.data.Participating_university_departments.toLowerCase().includes(searchString[1]) ||
+          project.node.data.Contact_Name.toLowerCase().includes(searchString[1]) ||
+          project.node.data.Contact_Title.toLowerCase().includes(searchString[1]) || 
+          project.node.data.Collaboration_type.toLowerCase().includes(searchString[1]) ||
+          project.node.data.Funding_source.toLowerCase().includes(searchString[1])
       })
 
   return (
@@ -43,6 +48,9 @@ export const query = graphql`
         node {
           id
           data {
+            Funding_source
+            Contact_Name
+            Contact_Title
             City_strategic_outcomes_string
             Project_end_date
             Success_criteria
