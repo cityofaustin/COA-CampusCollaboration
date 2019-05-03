@@ -87,12 +87,10 @@ export default ({ data }) => {
                 </p>
               </div>
             </div>
-            {/* SARA AND TED LOOK HERE *************** */}
-            {/* 
             <div>
                 <hr></hr>
                 <div className="usa-width-two-fourths">
-                   <h2 className="coa-city__sub-category">Value Proposition</h2>
+                    <h2 className="coa-city__sub-category">Value Proposition</h2>
                 </div>
                 <div className="usa-width-two-fourths">
                     <p className="coa-project__body">
@@ -112,7 +110,7 @@ export default ({ data }) => {
                     </p>
 
                 </div>
-            </div>*/} 
+            </div>
             <div>
                 <hr></hr>
                 <div className="usa-width-two-fourths">
