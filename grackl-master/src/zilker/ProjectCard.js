@@ -11,7 +11,7 @@ class ProjectCard extends Component {
   render() {
     const {
       Project_Name, id, Description, Primary_strategic_outcome, Secondary_strategic_outcome, Project_stage,
-      Lead_Department, Project_image
+      Lead_Department, Project_image, Participating_university
     } = this.props.data;
     const { fields } = this.props
 
@@ -44,21 +44,10 @@ class ProjectCard extends Component {
             </p>
             <dl className="coa-ProjectCard__field">
               <dt className="coa-ProjectCard__label">
-                Primary Department
+                Primary University
               </dt>
               <dd className="coa-ProjectCard__plain-text">
-                {
-                  Lead_Department.length === 1 ? departments[Lead_Department[0]] && departments[Lead_Department[0]]["fields"]["Dept long name"] :
-                    Lead_Department.map((d, i) => {
-                      return (
-                        <span>
-                          {departments[d] && departments[d]["fields"]["Dept long name"]}
-                          {i == 0 ? <span>, </span> : ''}
-                        </span>
-                      )
-                    }
-                    )
-                }
+                {Participating_university}
               </dd>
               <dt className="coa-ProjectCard__label">
                 City Goals

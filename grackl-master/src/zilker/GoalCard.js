@@ -19,7 +19,7 @@ class GoalCard extends Component {
           <span className="coa-Card__label-text2">Recently Updated Collaborations</span>
           <ul className="coa-Card__project-list">
             {projects.map((project, i) => {
-              if (i > 3) return false
+              if (i > 2) return false
               const { fields } = project.node
               const { Project_Name } = project.node.data
 
