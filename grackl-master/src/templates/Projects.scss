@@ -3,15 +3,15 @@
   font-weight: 600;
   line-height: 1.5;
   text-align: left;
-  color: #0049C7; font: "Roboto"; 
+  color: #0049C7; font: "Arial"; 
 
 }
 
 .coa-project__summary {
-  font-size: 2.2rem;
-  font-weight: 250;
+  font-size: 20px;
+  font-weight: normal;
   line-height: 1.5;
-  font-family: "Roboto"; margin-bottom: 1rem;
+  font-family: "Arial"; margin-bottom: 1rem;
 
 }
 
@@ -22,7 +22,7 @@
   text-align: left;
   text-transform: uppercase;
   color: #979696;
-  font-family: "Roboto";
+  font-family: "Arial";
 
 }
 
@@ -35,15 +35,15 @@ hr {
 }
 
 .coa-city__sub-category {
-  font-family: "Roboto"; font-weight: 600; font-size: 2.2rem; color: #0049C7;
+  font-family: "Arial"; font-weight: 600; font-size: 2.2rem; color: #0049C7;
 
 }
 
 .coa-project__body{
 margin-left: 3em; line-height: 1.5;
-  font-weight: 300; font-size: 2.0rem;
+ font-size: 18px;
   padding-bottom: 0.1rem;
-}
+ font-family: "Arial"; font-weight: normal;}
 
 
 #clock-icon {

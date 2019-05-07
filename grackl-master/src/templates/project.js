@@ -51,26 +51,31 @@ export default ({ data }) => {
                 <ClockSvg />
                 &nbsp;{Project_stage}
               </h3>
-              <hr />
-
-              <div className="usa-width-two-fourths">
-                <h2 className="coa-city__sub-category">Funding</h2>
-              </div>
-
-              <div className="usa-width-two-fourths">
-                <p className="coa-project__body">
-                  Total budget of &nbsp;
-                  {/* TODO: format as currency */}
-                  <span>{Total_project_budget}</span>
-                  {/* <FormattedNumber value={Total_project_budget} style="currency" currency="USD" minimumFractionDigits={0} /> */}
-                  <br />
-                  {Funding_source}
-                </p>
-              </div>
             </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-two-fourths">
+                    <h2 className="coa-city__sub-category">Participating University</h2>
+                </div>
+                <div className="usa-width-two-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Participating_university}</span>
+                    </p>
 
-            
+                </div>
+            </div>
+            <div>
+                <hr></hr>
+                <div className="usa-width-two-fourths">
+                    <h2 className="coa-city__sub-category">Participating University Department</h2>
+                </div>
+                <div className="usa-width-two-fourths">
+                    <p className="coa-project__body">
+                        <span className="coa-comma">{Participating_university_departments}</span>
+                    </p>
 
+                </div>
+            </div>
             <div>
               <hr />
               <div className="usa-width-two-fourths">
@@ -116,30 +121,6 @@ export default ({ data }) => {
             <div>
                 <hr></hr>
                 <div className="usa-width-two-fourths">
-                    <h2 className="coa-city__sub-category">Participating University</h2>
-                </div>
-                <div className="usa-width-two-fourths">
-                    <p className="coa-project__body">
-                        <span className="coa-comma">{Participating_university}</span>
-                    </p>
-
-                </div>
-            </div>
-            <div>
-                <hr></hr>
-                <div className="usa-width-two-fourths">
-                    <h2 className="coa-city__sub-category">Participating University Department</h2>
-                </div>
-                <div className="usa-width-two-fourths">
-                    <p className="coa-project__body">
-                        <span className="coa-comma">{Participating_university_departments}</span>
-                    </p>
-
-                </div>
-            </div>
-            <div>
-                <hr></hr>
-                <div className="usa-width-two-fourths">
                     <h2 className="coa-city__sub-category">Collaboration Type</h2>
                 </div>
                 <div className="usa-width-two-fourths">
@@ -161,18 +142,34 @@ export default ({ data }) => {
 
                 </div>
             </div>
-            <div>
-              <hr />
-              <div className="usa-width-two-fourths">
-                <h2 className="coa-city__sub-category">Get in Touch</h2>
-              </div>
-              <div className="usa-width-two-fourths">
+            <div className="usa-width-two-fourths">
+                <hr />
+                <h2 className="coa-city__sub-category">Funding</h2>
+            </div>
+
+            <div className="usa-width-two-fourths">
+                
                 <p className="coa-project__body">
-                  {Contact_Name}, {Contact_Title}
-                  <br />
-                  <a href={`mailto:${Contact_email}`}>{Contact_email}</a>
+                    Total budget of &nbsp;
+        {/* TODO: format as currency */}
+                    <span>{Total_project_budget}</span>
+                    {/* <FormattedNumber value={Total_project_budget} style="currency" currency="USD" minimumFractionDigits={0} /> */}
+                    <br />
+                    {Funding_source}
                 </p>
-              </div>
+            </div>
+            <div>
+                <hr />
+                <div className="usa-width-two-fourths">
+                    <h2 className="coa-city__sub-category">Get in Touch</h2>
+                </div>
+                <div className="usa-width-two-fourths">
+                    <p className="coa-project__body">
+                        {Contact_Name}, {Contact_Title}
+                        <br />
+                        <a href={`mailto:${Contact_email}`}>{Contact_email}</a>
+                    </p>
+                </div>
             </div>
           </div>
           <div className="col-xs-12 col-sm-2" />
